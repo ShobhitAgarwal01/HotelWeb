@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoNgZorroAntdModule } from './DemonNgZorroAntdModule';
+import { RegisterComponent } from './auth/components/register/register.component';
 
 registerLocaleData(en);
 

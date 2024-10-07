@@ -1,0 +1,34 @@
+<div Class="center-form">
+  <img src="../../../../assets/logo.png" alt="Logo" class="logo"/>
+  <h2>Enter to Details to Reigster</h2>
+  <form nz-form [formGroup]="registerForm" class="custom-form">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Input Your Name!">
+            <nz-input-group nzPrefixIcon="idcard">
+              <input type="text" nz-input formControlName="name" placeholder="Enter Name">
+            </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Input Your Email!">
+            <nz-input-group nzPrefixIcon="user">
+              <input type="text" nz-input formControlName="email" placeholder="Enter Email">
+            </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Input Your Pasword!">
+            <nz-input-group nzPrefixIcon="lock">
+              <input type="password" nz-input formControlName="password" placeholder="Enter Password">
+            </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <button nz-button nzType="primary" nzBlock [disabled]="registerForm.invalid" class="w-100">
+          Register
+      </button>
+
+  </form>
+</div>
